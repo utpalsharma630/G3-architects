@@ -16,7 +16,7 @@ header{
 }
 nav{
     display: flex;
-    padding: 50px 240px;
+    padding: 50px 150px;
     justify-content: space-between;
 }
 .header-title{
@@ -27,12 +27,11 @@ nav{
 nav > ul{
     display:flex;
     align-items: center;
-    /* gap: 30px; */
-   
+ 
 }
 nav ul li{
     list-style: none;
-    margin-left: 30px;
+    margin: 0 30px;
 }
 nav ul li a{
     text-decoration: none;
@@ -101,6 +100,7 @@ main{
     justify-content: space-around;
     text-align: center;
     margin: 30px 0;
+    gap: 1rem;
 }
 .facts-card{
     border: 1px solid #FF900E;
@@ -120,7 +120,30 @@ main{
     font-weight: 600;
     margin: 0;
 }
-/* header responsive */
+.sponser{
+    text-align: center;
+    margin: 30px 0;
+}
+.sponser-image{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 1.5rem;
+    
+}
+footer{
+    max-width: 1440px;
+    margin: 20px auto;
+    background-color:#FFF4E7 ;
+    margin-bottom: 40px;
+}
+.footer-description{
+    font-size: 1.25rem;
+    color:#424242 ;
+    text-align: center;
+    padding: 20px;
+}
+/*  responsive */
 @media screen and (max-width:576px) {
     nav{
         flex-direction: column;
@@ -134,16 +157,23 @@ main{
         flex-direction: column;
         margin-top: 20px;
         padding: 0;
-        
        
-       
+    }
+    .teames-container,
+    .card,
+    .sponser-image
+    {
+        flex-direction: column;
+    }
+    .teames-img-container{
+        grid-template-columns: repeat(1,1fr);
     }
     .banner-title{
         font-size: 3rem;
     }
     
 }
-@media screen and (min-width:577px) and (max-width:992px) {
+@media screen and (min-width:576px) and (max-width:992px) {
     nav{
         flex-direction: column;
         padding: 5px;
@@ -153,5 +183,10 @@ main{
         max-width: 100%;
         margin: 0 auto;
        
+    }
+    .teames-container,
+    .sponser-image
+    {
+        flex-direction: column;
     }
 }
