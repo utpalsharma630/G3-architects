@@ -143,6 +143,27 @@ footer{
     text-align: center;
     padding: 20px;
 }
+.features{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 50px;
+
+}
+.features-content{
+    margin: 15px;
+}
+.card-features{
+    padding: 40px;
+   
+}
+.features-card{
+    margin: 45px 0;
+}
+.features-tilte{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+}
 /*  responsive */
 @media screen and (max-width:576px) {
     nav{
@@ -161,6 +182,7 @@ footer{
     }
     .teames-container,
     .card,
+    .features,
     .sponser-image
     {
         flex-direction: column;
@@ -170,6 +192,15 @@ footer{
     }
     .banner-title{
         font-size: 3rem;
+    }
+    /* .features-image{
+        width: 100%;
+        margin: auto;
+    } */
+    .features-image img{
+        max-width: 300px;
+        
+        
     }
     
 }
