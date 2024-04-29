@@ -164,6 +164,30 @@ footer{
     font-weight: 600;
     color: #131313;
 }
+.features-image img{
+    height: 90%;
+    margin-left:50px ;
+}
+.features-image .ten-year-badge{
+    color: white;
+    background-color: #FF900E;
+    margin: 0;
+    text-align: center;
+    width: 342px;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+    bottom: 100px;
+}
+.ten-year-badge h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+.ten-year-badge p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 /*  responsive */
 @media screen and (max-width:576px) {
     nav{
